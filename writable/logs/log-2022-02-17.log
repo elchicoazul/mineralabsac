@@ -1,0 +1,26 @@
+CRITICAL - 2022-02-17 15:13:40 --> Undefined array key "Cliente"
+#0 C:\xampp\htdocs\web\app\Controllers\CajaController.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 134)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->insertar()
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-17 15:14:08 --> Undefined array key "Montos"
+#0 C:\xampp\htdocs\web\app\Controllers\CajaController.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->insertar()
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-02-17 16:26:24 --> Unknown column 'index.html' in 'where clause'
+CRITICAL - 2022-02-17 16:26:24 --> Unknown column 'index.html' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('index.html')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('index.html')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

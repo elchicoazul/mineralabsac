@@ -1,0 +1,49 @@
+CRITICAL - 2022-01-19 10:18:04 --> Undefined array key "Nombre"
+#0 C:\xampp\htdocs\web\app\Controllers\CajaController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->insertar()
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-19 15:46:07 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\web\app\Views\Layout\Dashboard.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 70)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('Layout/Dashboar...', Array, true)
+#4 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Caja/index', Array, true)
+#5 C:\xampp\htdocs\web\app\Controllers\CajaController.php(22): view('Caja/index', Array)
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index()
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#8 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-19 15:46:14 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\web\app\Views\Layout\Dashboard.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 70)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('Layout/Dashboar...', Array, true)
+#4 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Caja/index', Array, true)
+#5 C:\xampp\htdocs\web\app\Controllers\CajaController.php(22): view('Caja/index', Array)
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index()
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#8 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-19 15:49:43 --> Undefined property: stdClass::$id_categoria
+#0 C:\xampp\htdocs\web\app\Views\Caja\index.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 82)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Caja/index', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(22): view('Caja/index', Array)
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index()
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-19 17:14:56 --> Undefined array key "Id_Cliente"
+#0 C:\xampp\htdocs\web\app\Controllers\CajaController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->insertar()
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

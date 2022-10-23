@@ -1,0 +1,1191 @@
+CRITICAL - 2022-01-29 13:40:26 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\web\app\Views\Layout\Dashboard.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 70)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('Layout/Dashboar...', Array, true)
+#4 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Caja/index', Array, true)
+#5 C:\xampp\htdocs\web\app\Controllers\CajaController.php(33): view('Caja/index', Array)
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('1')
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#8 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-29 13:41:27 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:41:27 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:41:28 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:41:28 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:41:28 --> Unknown column 'img' in 'where clause'
+ERROR - 2022-01-29 13:41:28 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:41:28 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-29 13:41:28 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:41:44 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:41:44 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:41:44 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:41:44 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:41:44 --> Unknown column 'img' in 'where clause'
+ERROR - 2022-01-29 13:41:44 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:41:44 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-29 13:41:44 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-29 13:41:48 --> Undefined array key 0
+#0 C:\xampp\htdocs\web\app\Views\Caja\index.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 2)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Caja/index', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(33): view('Caja/index', Array)
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('10')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:41:52 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:41:52 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:41:52 --> Unknown column 'img' in 'where clause'
+ERROR - 2022-01-29 13:41:52 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:41:52 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-29 13:41:52 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:41:52 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:41:52 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:42:27 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:42:27 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:42:27 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:42:27 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:42:27 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:42:27 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:42:27 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:42:27 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:43:20 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:43:20 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:43:20 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:43:20 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:43:21 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:43:21 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:43:21 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:43:21 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(15): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->index('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:44:16 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:44:16 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:44:16 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:44:16 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:44:16 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:44:16 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:44:16 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:44:16 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:44:35 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:44:35 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:44:35 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:44:35 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:44:35 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:44:35 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:44:35 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:44:35 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:46:47 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:46:47 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:46:47 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:46:47 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:46:47 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:46:47 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:46:47 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:46:47 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:47:01 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:47:01 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:47:01 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:47:01 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:47:01 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:47:01 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:47:01 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:47:01 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:47:46 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:47:46 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:47:47 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:47:47 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:47:47 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:47:47 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:47:47 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:47:47 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-29 13:49:11 --> Undefined variable $Tipo
+#0 C:\xampp\htdocs\web\app\Views\Caja\cajas.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Caja/cajas', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(56): view('Caja/cajas', Array)
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('1')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-29 13:49:45 --> Attempt to read property "id_cliente" on array
+#0 C:\xampp\htdocs\web\app\Views\Caja\cajas.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 103)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Caja/cajas', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(56): view('Caja/cajas', Array)
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('1')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-29 13:50:45 --> Attempt to read property "id_cliente" on array
+#0 C:\xampp\htdocs\web\app\Views\Caja\cajas.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 103)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Caja/cajas', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(56): view('Caja/cajas', Array)
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('1')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-29 13:51:29 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Caja/cajas', Array, true)
+#3 C:\xampp\htdocs\web\app\Controllers\CajaController.php(56): view('Caja/cajas', Array)
+#4 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('1')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-29 13:52:25 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:52:25 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:52:25 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:52:25 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:52:25 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:52:25 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:52:25 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:52:25 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:52:43 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:52:43 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:52:43 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:52:43 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:52:43 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:52:43 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:52:43 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:52:43 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:57:49 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:57:49 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:57:49 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:57:49 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:57:49 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:57:49 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 13:57:49 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 13:57:49 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-29 14:22:37 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Caja/cajas', Array, true)
+#3 C:\xampp\htdocs\web\app\Controllers\CajaController.php(56): view('Caja/cajas', Array)
+#4 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('1')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-29 14:23:00 --> Undefined variable $catego
+#0 C:\xampp\htdocs\web\app\Views\Caja\cajas.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 1)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Caja/cajas', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(56): view('Caja/cajas', Array)
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('1')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:23:34 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:23:34 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:23:34 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:23:34 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:23:34 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:23:34 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:23:34 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:23:34 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:23:49 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:23:49 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:23:49 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:23:49 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:23:49 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:23:49 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:23:50 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:23:50 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:07 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:07 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:07 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:07 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:07 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:07 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:07 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:07 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:09 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:09 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:10 --> Unknown column 'img' in 'where clause'
+ERROR - 2022-01-29 14:24:10 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:10 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-29 14:24:10 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:10 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:10 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:12 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:12 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:12 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:12 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:13 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:13 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:13 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:13 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:42 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:42 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:43 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:43 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:43 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:43 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:24:43 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:24:43 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:08 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:08 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:08 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:08 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:08 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:08 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:09 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:09 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:19 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:19 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:19 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:19 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:19 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:19 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:19 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:19 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:24 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:24 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:24 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:24 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:24 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:24 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:24 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:24 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:41 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:41 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:41 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:41 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:41 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:41 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile_...')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-29 14:25:41 --> Unknown column 'img' in 'where clause'
+CRITICAL - 2022-01-29 14:25:41 --> Unknown column 'img' in 'where clause'
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\web\app\Models\TempCajaModel.php(17): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\web\app\Controllers\CajaController.php(38): App\Models\TempCajaModel->resultado('img')
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CajaController->cajas('img', 'undraw_profile....')
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CajaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

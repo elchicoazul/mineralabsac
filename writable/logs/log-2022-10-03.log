@@ -1,0 +1,13 @@
+ERROR - 2022-10-03 15:59:00 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+CRITICAL - 2022-10-03 15:59:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+#0 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\web\app\Models\CajaModel.php(9): CodeIgniter\Database\BaseConnection->query('select *, tb_cl...')
+#2 C:\xampp\htdocs\web\app\Controllers\Home.php(13): App\Models\CajaModel->Listare()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

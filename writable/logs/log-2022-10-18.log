@@ -1,0 +1,37 @@
+CRITICAL - 2022-10-18 20:53:25 --> Undefined variable: mensaje
+#0 C:\xampp\htdocs\web\app\Views\Layout\Dashboard.php(580): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 580, Array)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('Layout/Dashboar...', Array, true)
+#4 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('welcome_message', Array, true)
+#5 C:\xampp\htdocs\web\app\Controllers\Home.php(24): view('welcome_message', Array)
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-18 21:03:50 --> Undefined variable: mensaje
+#0 C:\xampp\htdocs\web\app\Views\Categoria\index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 63, Array)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Categoria/index', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\CategoriaController.php(15): view('Categoria/index', Array)
+#5 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CategoriaController->index()
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-18 21:04:47 --> Undefined variable: mensaje
+#0 C:\xampp\htdocs\web\app\Controllers\CategoriaController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CategoriaController->index()
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-18 21:04:54 --> Undefined variable: mensaje
+#0 C:\xampp\htdocs\web\app\Controllers\CategoriaController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CategoriaController->index()
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

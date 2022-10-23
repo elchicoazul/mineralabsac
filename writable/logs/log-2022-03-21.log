@@ -1,0 +1,12 @@
+CRITICAL - 2022-03-21 18:39:20 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\web\app\Views\Layout\Dashboard.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 70)
+#1 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\View\View.php(226): CodeIgniter\View\View->render('Layout/Dashboar...', Array, true)
+#4 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Categoria/index', Array, true)
+#5 C:\xampp\htdocs\web\app\Controllers\CategoriaController.php(15): view('Categoria/index', Array)
+#6 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\CategoriaController->index()
+#7 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+#8 C:\xampp\htdocs\web\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
