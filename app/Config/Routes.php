@@ -34,9 +34,15 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 //categoria
 $routes->get('/Categoria', 'CategoriaController::index');
+$routes->get('/Categoria/(:any)', 'CategoriaController::obtener/$1');
 $routes->post('/Categoria/insertar', 'CategoriaController::insertar');
+$routes->post('/Categoria/actualizar', 'CategoriaController::actualizar');
+
+//SubCategoria
+$routes->get('/SubCategoria/(:any)', 'SubCategoriaController::obtener/$1');
 $routes->get('/SubCategoria', 'SubCategoriaController::index');
 $routes->post('/SubCategoria/insertar', 'SubCategoriaController::insertar');
+$routes->post('/SubCategoria/actualizar', 'SubCategoriaController::actualizar');
 // caja
 $routes->get('/Caja/(:any)', 'CajaController::index/$1');
 $routes->get('/actualizar/(:any)', 'CajaController::obtener/$1');
@@ -52,7 +58,9 @@ $routes->get('/impresion/(:any)', 'CajaController::imp/$1');
 
 //tipo Cliente
 $routes->get('/Tipocliente', 'TipoclienteController::index');
+$routes->get('/Tipocliente/(:any)', 'TipoclienteController::obtener/$1');
 $routes->post('/Tipocliente/insertar', 'TipoclienteController::insertar');
+$routes->post('/Tipocliente/actualizar', 'TipoclienteController::actualizar');
 // Cliente
 $routes->get('/Cliente', 'ClienteController::index');
 

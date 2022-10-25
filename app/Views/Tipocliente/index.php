@@ -1,5 +1,9 @@
 <?= $this->extend('Layout/Dashboard')?>
 <?= $this->section('contenido')?>
+<?php
+
+
+?>
 <div class="card o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
@@ -43,8 +47,8 @@
                                     <td><?php echo  $key->nombre?></td>
                                     <td><?php echo $key->descripcion?></td>
                                 
-                                    <td><a href="<?php echo base_url().'/AgrupMenu/editar/'.$key->id_tipocliente?>" class="btn btn-info btn-sm">editar</a></td>
-                                    <td><a href="<?php echo base_url().'/eliminar'?>" class="btn btn-danger btn-sm">eliminar</a></td>
+                                    <td><a href="<?php echo base_url().'/Tipocliente/'.$key->id_tipocliente?>" class="btn btn-info btn-sm">editar</a></td>
+                                    <td><a href="<?php echo base_url().'/Tipocliente/eliminar'?>" class="btn btn-danger btn-sm">eliminar</a></td>
                                     </tr>
                                 <?php endforeach; ?>
                                     

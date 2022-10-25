@@ -10,10 +10,10 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Crear SubCategoria</h1>
                             </div>
-                            <form class="user" action="<?php echo base_url().'/SubCategoria/insertar'?>" method="post">
+                            <form class="user" action="<?php echo base_url().'/SubCategoria/actualizar'?>" method="post">
                                 <div class="form-group row">
                                     <div class="col-sm-6">
-                                        <label for="Tipo">Categoria</label>
+                                        <label for="Tipo">Sub Categoria</label>
                                         <select class="form-control" id="Tipo" name="Tipo">
                                             <?php foreach ($datos as $key): ?>
                                             <option value="<?php echo $key->id_categoria ?>"><?php echo $key->nombre ?>-<?php echo $key->tipo ?></option>
@@ -49,7 +49,7 @@
                                     <td><?php echo  $key->nombre?></td>
                                     <td><?php echo $key->id_categoria?></td>
                                 
-                                    <td><a href="#" class="btn btn-info btn-sm">editar</a></td>
+                                    <td><a href="<?php echo base_url().'/SubCategoria/'.$key->id_subcategoria?>" class="btn btn-info btn-sm">editar</a></td>
                                     <td><a href="#" class="btn btn-danger btn-sm">eliminar</a></td>
                                     </tr>
                                 <?php endforeach; ?>

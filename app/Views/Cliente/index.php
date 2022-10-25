@@ -72,7 +72,7 @@
                                     <td><?php echo  $key->rol?></td>
                                     
                                 
-                                    <td><a href="<?php echo base_url().'/Cliente/editar/'.$key->id_tipocliente?>" class="btn btn-info btn-sm">editar</a></td>
+                                    <td><a href="<?php echo base_url().'/Cliente/'.$key->id_tipocliente?>" class="btn btn-info btn-sm">editar</a></td>
                                     <td><a href="<?php echo base_url().'/Caja/'.$key->id_cliente?>" class="btn btn-success btn-sm">Detalles</a></td>
                                     </tr>
                                 <?php endforeach; ?>

@@ -1,3 +1,8 @@
+<?php
+$id_categoria = $datos[0]['id_categoria'];
+$nombre = $datos[0]['nombre'];
+$tipo = $datos[0]['tipo'];
+?>
 <?= $this->extend('Layout/Dashboard')?>
 <?= $this->section('contenido')?>
 <div class="card o-hidden border-0 shadow-lg my-5">
@@ -8,12 +13,13 @@
                     <div class="col-lg-7">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Crear Categoria</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Actualizar Categoria</h1>
                             </div>
-                            <form class="user" action="<?php echo base_url().'/Categoria/insertar'?>" method="post">
+                            <form class="user" action="<?php echo base_url().'/Categoria/actualizar'?>" method="post">
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input required type="text" class="form-control form-control-user" id="Nombre" name="Nombre" placeholder="Nombre">
+                                        <input hidden required type="text" class="form-control form-control-user" id="id_categoria" name="id_categoria" placeholder="Nombre" value="<?php echo $id_categoria?>">
+                                        <input required type="text" class="form-control form-control-user" id="Nombre" name="Nombre" placeholder="Nombre" value="<?php echo $nombre?>">
                                     </div>
                                     <div class="col-sm-6">
                                         <select class="form-control" id="Tipo" name="Tipo">
@@ -23,36 +29,13 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <button class="btn-primary btn-user btn-block">Cear Categoria</button>
+                                    <button class="btn-primary btn-user btn-block">Actualizar Categoria</button>
                                 </div>
                                 
                                
                             </form>
                             <hr>
-                            <table class="table table-striped table-hover">
-                                <thead class="table-dark">
-                                    <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Nombre</th>
-                                    <th scope="col">Tipo</th>
-                                    <th scope="col">Editar</th>
-                                    <th hidden scope="col">Eliminar</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <?php foreach ($datos as $key): ?>
-                                    <tr>
-                                    <th scope="row"><?php echo  $key->id_categoria?></th>
-                                    <td><?php echo  $key->nombre?></td>
-                                    <td><?php echo $key->tipo?></td>
-                                
-                                    <td ><a href="<?php echo base_url().'/Categoria/'.$key->id_categoria?>" class="btn btn-info btn-sm">editar</a></td>
-                                    <td hidden><a href="<?php echo base_url().'/eliminar'?>" class="btn btn-danger btn-sm">eliminar</a></td>
-                                    </tr>
-                                <?php endforeach; ?>
-                                    
-                                </tbody>
-                            </table>
+                            
                         </div>
                     </div>
                 </div>
