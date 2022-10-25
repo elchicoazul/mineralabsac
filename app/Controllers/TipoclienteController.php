@@ -28,10 +28,10 @@ class Tipoclientecontroller extends BaseController
         $respuesta= $Categoria->insertar($datos);
         
         if($respuesta>0){
-            return redirect()->to(base_url().'/Tipocliente');
+            return redirect()->to(base_url().'/Tipocliente')->with('mensaje', '1');
 
         }else{
-            return redirect()->to(base_url().'/Tipocliente');
+            return redirect()->to(base_url().'/Tipocliente')->with('mensaje', '0');
 
         }
         

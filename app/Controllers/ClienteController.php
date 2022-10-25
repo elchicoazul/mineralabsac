@@ -44,10 +44,10 @@ class ClienteController extends BaseController
         $respuesta= $Categoria->insertar($datos);
         
         if($respuesta>0){
-            return redirect()->to(base_url().'/Cliente');
+            return redirect()->to(base_url().'/Cliente')->with('mensaje', '1');
 
         }else{
-            return redirect()->to(base_url().'/Cliente');
+            return redirect()->to(base_url().'/Cliente')->with('mensaje', '0');
 
         }
         
