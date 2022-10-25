@@ -422,10 +422,10 @@ class CajaController extends BaseController
         $respuesta = $pro->actualizar($datos, $datatemp[0]['id_programado']);
 		$respuesta = $titulo->eliminar($data);
 
-		if ($respuesta) {
-            return redirect()->to(base_url().'/Caja/'.$datatemp[0]['id_cliente']);
+		if ($respuesta>0) {
+            return redirect()->to(base_url().'/Caja/'.$datatemp[0]['id_cliente'])->with('mensaje', '1');
 		} else {
-            return redirect()->to(base_url().'/Caja/'.$datatemp[0]['id_cliente']);
+            return redirect()->to(base_url().'/Caja/'.$datatemp[0]['id_cliente'])->with('mensaje', '0');
 		}
     }
 }

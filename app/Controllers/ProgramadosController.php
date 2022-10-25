@@ -50,10 +50,10 @@ class ProgramadosController extends BaseController
         $respuesta= $Categoria->insertar($datos);
         
         if($respuesta>0){
-            return redirect()->to(base_url().'/Programados/'.$_POST['Categoria']);
+            return redirect()->to(base_url().'/Programados/'.$_POST['Categoria'])->with('mensaje', '1');
 
         }else{
-            return redirect()->to(base_url().'/Programados/'.$_POST['Categoria']);
+            return redirect()->to(base_url().'/Programados/'.$_POST['Categoria'])->with('mensaje', '0');
 
         }
         
