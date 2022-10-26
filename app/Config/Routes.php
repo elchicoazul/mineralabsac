@@ -68,6 +68,7 @@ $routes->get('/Cliente', 'ClienteController::index');
 $routes->get('/Cliente/(:any)', 'ClienteController::obtener/$1');
 
 $routes->post('/Cliente/insertar', 'ClienteController::insertar');
+$routes->post('/Cliente/actualizar', 'ClienteController::actualizar');
 
 //Progrmados
 

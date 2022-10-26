@@ -6,7 +6,10 @@ $id_tipocliente = $rpta[0]['id_tipocliente'];
 $dni = $rpta[0]['dni'];
 $direccion = $rpta[0]['direccion'];
 ?>
-<?= $this->extend('Layout/Dashboard')?>
+<?php foreach (session('Cliente')as $key): ?>
+<?php $dash=$key->rol;?>
+<?php endforeach; ?>
+<?= $this->extend('Layout/'.$dash)?>
 <?= $this->section('contenido')?>
 <div class="card o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">
@@ -18,7 +21,7 @@ $direccion = $rpta[0]['direccion'];
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Actualizar Usuario</h1>
                             </div>
-                            <form class="user" action="<?php echo base_url().'/Cliente/actualizar/'?>" method="post">
+                            <form class="user" action="<?php echo base_url().'/Cliente/actualizar'?>" method="post">
                                 <div class="form-group row">
                                     <div class="col-sm-6">
                                         <select class="form-control" id="TipoCliente" name="TipoCliente">
@@ -28,15 +31,16 @@ $direccion = $rpta[0]['direccion'];
                                         </select>
                                     </div>
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="Nombre" name="Nombre" placeholder="Nombre">
+                                        <input type="text" class="form-control form-control-user" id="Nombre" name="Nombre" value="<?php echo $nombre?>" placeholder="Nombre">
+                                        <input hidden  type="text" class="form-control form-control-user" id="id_cliente" name="id_cliente" value="<?php echo $id_cliente?>" placeholder="Nombre">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="DNI" name="DNI" placeholder="DNI">
+                                        <input type="text" class="form-control form-control-user" id="DNI" name="DNI" value="<?php echo $dni?>" placeholder="DNI">
                                     </div>
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="Direccion" name="Direccion" placeholder="Direccion">
+                                        <input type="text" class="form-control form-control-user" id="Direccion"  name="Direccion" value="<?php echo $direccion?>" placeholder="Direccion">
                                     </div>
                                     
                                 </div>
@@ -52,7 +56,7 @@ $direccion = $rpta[0]['direccion'];
                                     </div>
                                     
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" class="form-control form-control-user" id="Descripcion" name="Descripcion" placeholder="contraseña">
+                                        <input type="password" class="form-control form-control-user" id="Descripcion" name="Descripcion" value="" placeholder="contraseña">
                                     </div>
                                 </div>
                                 

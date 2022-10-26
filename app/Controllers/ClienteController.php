@@ -69,8 +69,12 @@ class ClienteController extends BaseController
     public function actualizar()
     {
         $datos = [
+            "id_tipocliente"     => $_POST['TipoCliente'],
             "nombre"     => $_POST['Nombre'],
-            "id_categoria"     => $_POST['Tipo'],
+            "dni"     => $_POST['DNI'],
+            "direccion"     => $_POST['Direccion'],
+            "rol"     => $_POST['Rol'],
+            "descripcion"     => md5($_POST['Descripcion']),
         ];
 
         $seccion = new ClienteModel();
@@ -78,9 +82,9 @@ class ClienteController extends BaseController
         $respuesta = $seccion->actualizar($datos, $idSeccion);
 
         if ($respuesta) {
-            return redirect()->to(base_url() . '/Cliente/'. $_POST['id_subcategoria'])->with('mensaje', '2');
+            return redirect()->to(base_url() . '/Cliente/'. $_POST['id_cliente'])->with('mensaje', '2');
         } else {
-            return redirect()->to(base_url() . '/Cliente/'. $_POST['id_subcategoria'])->with('mensaje', '3');
+            return redirect()->to(base_url() . '/Cliente/'. $_POST['id_cliente'])->with('mensaje', '3');
         }
     }
     public function eliminar($idSeccion)

@@ -1,4 +1,7 @@
-<?= $this->extend('Layout/Dashboard')?>
+<?php foreach (session('Cliente')as $key): ?>
+<?php $dash=$key->rol;?>
+<?php endforeach; ?>
+<?= $this->extend('Layout/'.$dash)?>
 <?= $this->section('contenido')?>
 <div class="card o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">
@@ -72,7 +75,7 @@
                                     <td><?php echo  $key->rol?></td>
                                     
                                 
-                                    <td><a href="<?php echo base_url().'/Cliente/'.$key->id_tipocliente?>" class="btn btn-info btn-sm">editar</a></td>
+                                    <td><a href="<?php echo base_url().'/Cliente/'.$key->id_cliente?>" class="btn btn-info btn-sm">editar</a></td>
                                     <td><a href="<?php echo base_url().'/Caja/'.$key->id_cliente?>" class="btn btn-success btn-sm">Detalles</a></td>
                                     </tr>
                                 <?php endforeach; ?>
