@@ -1,4 +1,7 @@
-<?= $this->extend('Layout/Dashboard')?>
+<?php foreach (session('Cliente')as $key): ?>
+<?php $dash=$key->rol;?>
+<?php endforeach; ?>
+<?= $this->extend('Layout/'.$dash)?>
 <?= $this->section('contenido')?>
 <?php
 

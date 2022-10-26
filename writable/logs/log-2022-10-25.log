@@ -189,3 +189,275 @@ CRITICAL - 2022-10-25 14:27:47 --> Undefined index: id_tipocliente
 #3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-10-25 17:24:14 --> Invalid file: Tipocliente/index.php
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Tipocliente/ind...')
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Tipocliente/ind...', Array, true)
+#2 C:\xampp\htdocs\mineralabsac\app\Controllers\TipoclienteController.php(17): view('Tipocliente/ind...', Array)
+#3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Tipoclientecontroller->index()
+#4 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipoclientecontroller))
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-25 17:24:20 --> Invalid file: Tipocliente/index.php
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Tipocliente/ind...')
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Tipocliente/ind...', Array, true)
+#2 C:\xampp\htdocs\mineralabsac\app\Controllers\TipoclienteController.php(17): view('Tipocliente/ind...', Array)
+#3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Tipoclientecontroller->index()
+#4 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipoclientecontroller))
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-25 17:24:43 --> Invalid file: Tipocliente/index.php
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Tipocliente/ind...')
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Tipocliente/ind...', Array, true)
+#2 C:\xampp\htdocs\mineralabsac\app\Controllers\TipoclienteController.php(17): view('Tipocliente/ind...', Array)
+#3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Tipoclientecontroller->index()
+#4 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipoclientecontroller))
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-25 17:30:18 --> Class 'App\Controllers\SubCategoriaModel' not found
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ClienteController->obtener('2')
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-10-25 17:30:42 --> Unknown column 'id_subcategoria' in 'where clause'
+CRITICAL - 2022-10-25 17:30:42 --> Unknown column 'id_subcategoria' in 'where clause'
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\mineralabsac\app\Controllers\ClienteController.php(59): App\Models\ClienteModel->ObtenerbyId(Array)
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ClienteController->obtener('2')
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#8 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-25 17:32:02 --> Undefined variable: Tipo
+#0 C:\xampp\htdocs\mineralabsac\app\Views\Cliente\actualizar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Cliente/actuali...', Array, true)
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\ClienteController.php(63): view('Cliente/actuali...', Array)
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ClienteController->obtener('2')
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-25 17:36:24 --> Undefined variable: Tipo
+#0 C:\xampp\htdocs\mineralabsac\app\Views\Cliente\actualizar.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Cliente/actuali...', Array, true)
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\ClienteController.php(63): view('Cliente/actuali...', Array)
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ClienteController->obtener('2')
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-25 17:38:16 --> Undefined variable: Categoria
+#0 C:\xampp\htdocs\mineralabsac\app\Controllers\ClienteController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 60, Array)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ClienteController->obtener('2')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-25 17:38:45 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Cliente/actuali...', Array, true)
+#3 C:\xampp\htdocs\mineralabsac\app\Controllers\ClienteController.php(65): view('Cliente/actuali...', Array)
+#4 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ClienteController->obtener('2')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-10-25 17:39:41 --> Undefined variable: Tipo
+#0 C:\xampp\htdocs\mineralabsac\app\Views\Cliente\actualizar.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Cliente/actuali...', Array, true)
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\ClienteController.php(65): view('Cliente/actuali...', Array)
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ClienteController->obtener('2')
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-25 17:41:05 --> Undefined variable: datos
+#0 C:\xampp\htdocs\mineralabsac\app\Views\Cliente\actualizar.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Cliente/actuali...', Array, true)
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\ClienteController.php(67): view('Cliente/actuali...', Array)
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ClienteController->obtener('2')
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-25 19:45:22 --> Undefined variable: datos
+#0 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->login()
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-10-25 20:47:36 --> Unknown column '0a9827804e60395bf1e95bbf86531ea6' in 'where clause'
+CRITICAL - 2022-10-25 20:47:36 --> Unknown column '0a9827804e60395bf1e95bbf86531ea6' in 'where clause'
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(9): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(35): App\Models\ClienteModel->login('74217362', '0a9827804e60395...')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-25 20:49:38 --> Unknown column '0a9827804e60395bf1e95bbf86531ea6' in 'where clause'
+CRITICAL - 2022-10-25 20:49:38 --> Unknown column '0a9827804e60395bf1e95bbf86531ea6' in 'where clause'
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(9): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(35): App\Models\ClienteModel->login('74217362', '0a9827804e60395...')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-25 20:49:54 --> Unknown column '0a9827804e60395bf1e95bbf86531ea6' in 'where clause'
+CRITICAL - 2022-10-25 20:49:54 --> Unknown column '0a9827804e60395bf1e95bbf86531ea6' in 'where clause'
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(9): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(35): App\Models\ClienteModel->login('74217362', '0a9827804e60395...')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-25 20:50:36 --> Unknown column '0a9827804e60395bf1e95bbf86531ea6' in 'where clause'
+CRITICAL - 2022-10-25 20:50:36 --> Unknown column '0a9827804e60395bf1e95bbf86531ea6' in 'where clause'
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(9): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(35): App\Models\ClienteModel->login('74217362', '0a9827804e60395...')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-25 20:51:20 --> Unknown column '0a9827804e60395bf1e95bbf86531ea6' in 'where clause'
+CRITICAL - 2022-10-25 20:51:20 --> Unknown column '0a9827804e60395bf1e95bbf86531ea6' in 'where clause'
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(9): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(35): App\Models\ClienteModel->login('74217362', '0a9827804e60395...')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-25 20:52:58 --> Undefined variable: data
+#0 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-25 20:54:20 --> Undefined variable: data
+#0 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-10-25 21:00:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@nacionalcode.com and descripcion=md5(123456)' at line 1
+CRITICAL - 2022-10-25 21:00:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@nacionalcode.com and descripcion=md5(123456)' at line 1
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(9): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(35): App\Models\ClienteModel->login('admin@nacionalc...', '123456')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-25 21:01:09 --> Unknown column 'local' in 'where clause'
+CRITICAL - 2022-10-25 21:01:09 --> Unknown column 'local' in 'where clause'
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(9): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(35): App\Models\ClienteModel->login('local', 'local')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-25 21:01:56 --> Unknown column 'local' in 'where clause'
+CRITICAL - 2022-10-25 21:01:56 --> Unknown column 'local' in 'where clause'
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(9): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(35): App\Models\ClienteModel->login('local', '742173621')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-25 21:03:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@nacionalcode.com and descripcion=md5(123456)' at line 1
+CRITICAL - 2022-10-25 21:03:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@nacionalcode.com and descripcion=md5(123456)' at line 1
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(9): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(35): App\Models\ClienteModel->login('admin@nacionalc...', '123456')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-25 21:03:30 --> Unknown column 'perro' in 'where clause'
+CRITICAL - 2022-10-25 21:03:30 --> Unknown column 'perro' in 'where clause'
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(9): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(35): App\Models\ClienteModel->login('perro', 'Perro')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-25 21:03:41 --> Unknown column 'perro' in 'where clause'
+CRITICAL - 2022-10-25 21:03:41 --> Unknown column 'perro' in 'where clause'
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(9): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(35): App\Models\ClienteModel->login('perro', '74217362')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-25 21:08:42 --> Unknown column 'camino' in 'where clause'
+CRITICAL - 2022-10-25 21:08:42 --> Unknown column 'camino' in 'where clause'
+#0 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from t...', 0)
+#1 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select * from t...')
+#2 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select * from t...')
+#3 C:\xampp\htdocs\mineralabsac\app\Models\ClienteModel.php(9): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\xampp\htdocs\mineralabsac\app\Controllers\Home.php(35): App\Models\ClienteModel->login('camino', '123456')
+#5 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Home->iniciar()
+#6 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\mineralabsac\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mineralabsac\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

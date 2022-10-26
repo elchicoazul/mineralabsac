@@ -32,7 +32,7 @@
                                     </div>
                                     
                                 </div>
-                                <div class="form-group row">
+                                <div hidden class="form-group row">
                                     <div class="col-sm-6">
                                         <input type="text" class="form-control form-control-user" id="Rol" name="Rol" placeholder="Rol">
                                     </div>
