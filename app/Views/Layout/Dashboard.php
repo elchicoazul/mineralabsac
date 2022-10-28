@@ -515,7 +515,7 @@
                                     <tr>
                                     <th scope="col">moneda</th>
                                     <th scope="col">Cantidad</th>
-                                    <th scope="col">Total <input id="resultado" name="resultado"  disabled type="text"></th>
+                                    <th scope="col">Total <input id="resultado" name="resultado" value="0" disabled type="text"></th>
                                     
                                     </tr>
                                 </thead>
