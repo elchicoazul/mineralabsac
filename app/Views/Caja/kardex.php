@@ -3,7 +3,10 @@
 <?php $sumasol=0;
       $sumadol =0;?>
 
-<?= $this->extend('Layout/Dashboard')?>
+<?php foreach (session('Cliente')as $key): ?>
+<?php $dash=$key->rol;?>
+<?php endforeach; ?>
+<?= $this->extend('Layout/'.$dash)?>
 <?= $this->section('contenido')?>
 <div class="card o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">

@@ -5,6 +5,10 @@ class ClienteModel extends Model {
         $Cliente = $this->db->query("select * from tb_cliente");
          return $Cliente->getResult();
     }
+    public function login($dni, $des){
+        $Cliente = $this->db->query("select * from tb_cliente where dni=$dni and descripcion=md5($des)");
+         return $Cliente->getResult();
+    }
     public function insertar($datos){
         $Cliente = $this->db->table('tb_cliente');
         $Cliente->insert($datos);

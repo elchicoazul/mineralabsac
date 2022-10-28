@@ -36,7 +36,7 @@ class ClienteController extends BaseController
             "nombre"     => $_POST['Nombre'],
             "dni"     => $_POST['DNI'],
             "direccion"     => $_POST['Direccion'],
-            "rol"     => $_POST['Rol'],
+            "rol"     => "Ninguna",
             "descripcion"     => $_POST['Descripcion'],
         
         ];
@@ -51,5 +51,53 @@ class ClienteController extends BaseController
 
         }
         
+    }
+    public function obtener($idtipo)
+    {
+        $TipCategoria = new TipoclienteModel();
+        $tip=$TipCategoria->Listar();
+        $data = ["id_cliente" => $idtipo];
+        $seccion = new ClienteModel();
+        $respuesta = $seccion->ObtenerbyId($data);
+        $datos=$seccion->Listar();
+        $data = ["rpta" => $respuesta,
+        "Tipo" => $tip,
+        ];
+
+        return view('Cliente/actualizar', $data);
+    }
+    public function actualizar()
+    {
+        $datos = [
+            "id_tipocliente"     => $_POST['TipoCliente'],
+            "nombre"     => $_POST['Nombre'],
+            "dni"     => $_POST['DNI'],
+            "direccion"     => $_POST['Direccion'],
+            "rol"     => $_POST['Rol'],
+            "descripcion"     => md5($_POST['Descripcion']),
+        ];
+
+        $seccion = new ClienteModel();
+        $idSeccion = $_POST['id_cliente'];
+        $respuesta = $seccion->actualizar($datos, $idSeccion);
+
+        if ($respuesta) {
+            return redirect()->to(base_url() . '/Cliente/'. $_POST['id_cliente'])->with('mensaje', '2');
+        } else {
+            return redirect()->to(base_url() . '/Cliente/'. $_POST['id_cliente'])->with('mensaje', '3');
+        }
+    }
+    public function eliminar($idSeccion)
+    {
+        $almacen = new ClienteModel();
+        $data = ["id_cliente" => $idSeccion];
+
+        $respuesta = $almacen->eliminar($data);
+
+        if ($respuesta) {
+            return redirect()->to(base_url() . '/Cliente')->with('mensaje', '4');
+        } else {
+            return redirect()->to(base_url() . '/Cliente')->with('mensaje', '5');
+        }
     }
 }

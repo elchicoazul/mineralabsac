@@ -59,61 +59,8 @@
                     <span>Dashboard</span></a>
             </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Caja
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li  class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Ingresos</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Tipos de Ingresos</h6>
-                        <?php foreach (session('MenuDashboardCliente')as $key): ?>
-                            <?php
-                            if ( $key->tipo=="Ingreso") {?>
-                                <a class="collapse-item" href="<?php echo base_url()?>/Cajas/<?php echo $key -> id_categoria?>"><?php echo $key->nombre ?></a>
-                            <?php }?>
-                        <?php endforeach; ?>
-                                            
                        
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Egresos</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Tipos de Egresos:</h6>
-                        <?php foreach (session('MenuDashboardCliente')as $key): ?>
-                            <?php
-                            if ( $key->tipo=="Egreso") {?>
-                                <a class="collapse-item" href="<?php echo base_url()?>/Cajas/<?php echo $key -> id_categoria?>"><?php echo $key->nombre ?></a>
-                            <?php }?>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-            </li>
-            <li hidden class="nav-item">
-                <a class="nav-link" href="<?php echo base_url()?>/kardex">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Kardex</span></a>
-            </li>
+            
             <hr class="sidebar-divider">
 
 <!-- Heading -->
@@ -122,26 +69,7 @@
 </div>
 
 <!-- Nav Item - Pages Collapse Menu -->
-<li  class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#ProIngre"
-        aria-expanded="true" aria-controls="ProIngre">
-        <i class="fas fa-fw fa-cog"></i>
-        <span>Ingresos</span>
-    </a>
-    <div id="ProIngre" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Programar Ingresos</h6>
-            <?php foreach (session('MenuDashboardCliente')as $key): ?>
-                <?php
-                if ( $key->tipo=="Ingreso") {?>
-                    <a class="collapse-item" href="<?php echo base_url()?>/Programados/<?php echo $key -> id_categoria?>"><?php echo $key->nombre ?></a>
-                <?php }?>
-            <?php endforeach; ?>
-                                
-           
-        </div>
-    </div>
-</li>
+
 
 <!-- Nav Item - Utilities Collapse Menu -->
 <li class="nav-item">
@@ -167,42 +95,11 @@
             <hr class="sidebar-divider">
 
             <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
+            
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Usuarios</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Sobre Usuarios</h6>
-                       
-                        <a class="collapse-item" href="<?php echo base_url()?>/Cliente">Registrar Usuario</a>
-                        <a class="collapse-item" href="<?php echo base_url()?>/Tipocliente">Tipos de Usuario</a>
-                        
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Cate"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Categorias</span>
-                </a>
-                <div id="Cate" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Sobre Categorias</h6>
-                        <a class="collapse-item" href="<?php echo base_url()?>/Categoria">Categoria</a>
-                        <a class="collapse-item" href="<?php echo base_url()?>/SubCategoria">Sub Categoria</a>
-                    </div>
-                </div>
-            </li>
-
+            
+            
             <!-- Nav Item - Charts -->
             
 

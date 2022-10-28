@@ -1,4 +1,7 @@
-<?= $this->extend('Layout/Dashboard')?>
+<?php foreach (session('Cliente')as $key): ?>
+<?php $dash=$key->rol;?>
+<?php endforeach; ?>
+<?= $this->extend('Layout/'.$dash)?>
 <?= $this->section('contenido')?>
 <?php
 
@@ -30,7 +33,13 @@
                                
                             </form>
                             <hr>
-                            <table class="table table-striped table-hover">
+                            <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Registro</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                            <table class="table table-sm table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead class="table-dark">
                                     <tr>
                                     <th scope="col">#</th>
@@ -54,11 +63,15 @@
                                     
                                 </tbody>
                             </table>
+                            </div>
+                        </div>
+                    </div>
                         </div>
                     </div>
                 </div>
             </div>
 </div>
+
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript">
 let mensaje = '<?php echo $mensaje ?>';
@@ -77,4 +90,12 @@ if (mensaje == '1') {
     swal(':(', 'Fallo al eliminar!', 'error');
 }
 </script>         
+
+ <!-- Page level plugins -->
+ <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>        
+
 <?= $this->endSection()?>

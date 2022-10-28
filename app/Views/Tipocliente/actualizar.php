@@ -3,7 +3,10 @@ $id_tipocliente = $datos[0]['id_tipocliente'];
 $nombre = $datos[0]['nombre'];
 $descripcion = $datos[0]['descripcion'];
 ?>
-<?= $this->extend('Layout/Dashboard')?>
+<?php foreach (session('Cliente')as $key): ?>
+<?php $dash=$key->rol;?>
+<?php endforeach; ?>
+<?= $this->extend('Layout/'.$dash)?>
 <?= $this->section('contenido')?>
 
 <div class="card o-hidden border-0 shadow-lg my-5">

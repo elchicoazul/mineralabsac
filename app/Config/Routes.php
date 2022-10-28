@@ -31,7 +31,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Home::login');
+$routes->get('/Dashboard', 'Home::index');
+$routes->post('/iniciar', 'Home::iniciar');
 //categoria
 $routes->get('/Categoria', 'CategoriaController::index');
 $routes->get('/Categoria/(:any)', 'CategoriaController::obtener/$1');
@@ -63,8 +65,10 @@ $routes->post('/Tipocliente/insertar', 'TipoclienteController::insertar');
 $routes->post('/Tipocliente/actualizar', 'TipoclienteController::actualizar');
 // Cliente
 $routes->get('/Cliente', 'ClienteController::index');
+$routes->get('/Cliente/(:any)', 'ClienteController::obtener/$1');
 
 $routes->post('/Cliente/insertar', 'ClienteController::insertar');
+$routes->post('/Cliente/actualizar', 'ClienteController::actualizar');
 
 //Progrmados
 

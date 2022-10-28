@@ -1,4 +1,7 @@
-<?= $this->extend('Layout/Dashboard')?>
+<?php foreach (session('Cliente')as $key): ?>
+<?php $dash=$key->rol;?>
+<?php endforeach; ?>
+<?= $this->extend('Layout/'.$dash)?>
 <?= $this->section('contenido')?>
 <div class="card o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">
@@ -32,7 +35,7 @@
                                     </div>
                                     
                                 </div>
-                                <div class="form-group row">
+                                <div hidden class="form-group row">
                                     <div class="col-sm-6">
                                         <input type="text" class="form-control form-control-user" id="Rol" name="Rol" placeholder="Rol">
                                     </div>
@@ -48,7 +51,13 @@
                                
                             </form>
                             <hr>
-                            <table  class="table table-striped table-hover">
+                            <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Registro</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                            <table class="table table-sm table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead class="table-dark">
                                     <tr>
                                     <th scope="col">#</th>
@@ -72,13 +81,16 @@
                                     <td><?php echo  $key->rol?></td>
                                     
                                 
-                                    <td><a href="<?php echo base_url().'/Cliente/'.$key->id_tipocliente?>" class="btn btn-info btn-sm">editar</a></td>
+                                    <td><a href="<?php echo base_url().'/Cliente/'.$key->id_cliente?>" class="btn btn-info btn-sm">editar</a></td>
                                     <td><a href="<?php echo base_url().'/Caja/'.$key->id_cliente?>" class="btn btn-success btn-sm">Detalles</a></td>
                                     </tr>
                                 <?php endforeach; ?>
                                     
                                 </tbody>
                             </table>
+                            </div>
+                        </div>
+                    </div>
                         </div>
                     </div>
                 </div>
@@ -101,5 +113,11 @@ if (mensaje == '1') {
 } else if (mensaje == '5') {
     swal(':(', 'Fallo al eliminar!', 'error');
 }
-</script>         
+</script>
+<!-- Page level plugins -->
+<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>          
 <?= $this->endSection()?>
