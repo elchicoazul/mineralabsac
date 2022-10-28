@@ -510,13 +510,13 @@
       </div>
       <div class="modal-body" id="calcular">
         
-      <table class="table  table-hover">
+      <table id="tables" class="table  table-hover">
                                 <thead class="table-dark">
                                     <tr>
                                     <th scope="col">moneda</th>
                                     <th scope="col">Cantidad</th>
-                                    <th scope="col">Total</th>
-                                    <th> <input type="text" id="resultado"></label></th>
+                                    <th scope="col">Total <input id="resultado" name="resultado"  disabled type="text"></th>
+                                    
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -571,6 +571,11 @@
                                         <td>0.1</td>
                                         <td><input id="dicentavo" type="text" onchange="suma()" onkeyup="udicentavo()"></td>
                                         <td><input id="rdicentavo" type="text" value="0" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td><input id="dicentavo" value="Limpiar" type="button" class="btn btn-primary"  onclick="limpiar()"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -688,10 +693,15 @@
         rvecentavo.value=vecentavo.value*0.2;
     }
     function udicentavo(){
-        rdicentavo.value=dicentavo.value*0.1; 
+        rdicentavo.value=parseFloat(dicentavo.value)*0.1; 
+    }
+    function limpiar(){
+        table.reset(); 
     }
     function suma(){
-        resultado.value=rcien.value+rcincuenta.value+rveinte.value+rdiez.value+rcinco.value+rdos.value+rsol.value+rchina.value+rvecentavo.value+rdicentavo.value; 
+        
+        resultado.value=parseFloat(rcien.value)+parseFloat(rcincuenta.value)+parseFloat(rveinte.value)+parseFloat(rdiez.value)+parseFloat(rcinco.value)+parseFloat(rdos.value)+parseFloat(rsol.value)+parseFloat(rchina.value)+parseFloat(rvecentavo.value)+parseFloat(rdicentavo.value); 
+        
     }
 
 </script>
