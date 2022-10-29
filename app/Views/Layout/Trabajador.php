@@ -81,7 +81,7 @@
     <div id="ProEgre" class="collapse" aria-labelledby="headingUtilities"
         data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Programar Egresos:</h6>
+            <h6 class="collapse-header">Solicitar Dinero:</h6>
             <?php foreach (session('MenuDashboardCliente')as $key): ?>
                 <?php
                 if ( $key->tipo=="Egreso") {?>

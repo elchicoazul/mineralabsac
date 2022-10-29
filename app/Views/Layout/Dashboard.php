@@ -60,15 +60,15 @@
             </li>
 
             <!-- Divider -->
-            <hr class="sidebar-divider">
+            <hr hidden class="sidebar-divider">
 
             <!-- Heading -->
-            <div class="sidebar-heading">
+            <div hidden class="sidebar-heading">
                 Caja
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li  class="nav-item">
+            <li hidden  class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
@@ -90,7 +90,7 @@
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
+            <li hidden class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
@@ -114,15 +114,15 @@
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Kardex</span></a>
             </li>
-            <hr class="sidebar-divider">
+            <hr hidden class="sidebar-divider">
 
 <!-- Heading -->
-<div class="sidebar-heading">
+<div hidden class="sidebar-heading">
     Programaciones
 </div>
 
 <!-- Nav Item - Pages Collapse Menu -->
-<li  class="nav-item">
+<li hidden  class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#ProIngre"
         aria-expanded="true" aria-controls="ProIngre">
         <i class="fas fa-fw fa-cog"></i>
@@ -144,7 +144,7 @@
 </li>
 
 <!-- Nav Item - Utilities Collapse Menu -->
-<li class="nav-item">
+<li hidden class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#ProEgre"
         aria-expanded="true" aria-controls="ProEgre">
         <i class="fas fa-fw fa-wrench"></i>
@@ -168,7 +168,7 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Addons
+                Usuarios
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
