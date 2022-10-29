@@ -11,7 +11,7 @@
                     <div class="col-lg-12">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Registrar Usuario v1.1</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Registrar Usuario</h1>
                             </div>
                             <form class="user" action="<?php echo base_url().'/Cliente/insertar'?>" method="post">
                                 <div class="form-group row">
