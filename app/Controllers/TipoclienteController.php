@@ -41,8 +41,9 @@ class Tipoclientecontroller extends BaseController
         $data = ["id_tipocliente" => $idtipo];
         $seccion = new TipoclienteModel();
         $respuesta = $seccion->ObtenerbyId($data);
-
-        $datos = ["datos" => $respuesta];
+        $mensaje = session('mensaje');
+        $datos = ["datos" => $respuesta,
+        "mensaje" => $mensaje];
 
         return view('Tipocliente/actualizar', $datos);
     }
