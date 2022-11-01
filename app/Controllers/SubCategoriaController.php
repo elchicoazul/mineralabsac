@@ -45,8 +45,9 @@ class SubCategoriaController extends BaseController
         $data = ["id_subcategoria" => $idtipo];
         $seccion = new SubCategoriaModel();
         $respuesta = $seccion->ObtenerbyId($data);
-
-        $datos = ["datos" => $respuesta];
+        $mensaje = session('mensaje');
+        $datos = ["datos" => $respuesta,
+        "mensaje" => $mensaje];
 
         return view('SubCategoria/actualizar', $datos);
     }

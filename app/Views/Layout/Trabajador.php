@@ -76,7 +76,7 @@
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#ProEgre"
         aria-expanded="true" aria-controls="ProEgre">
         <i class="fas fa-fw fa-wrench"></i>
-        <span>Egresos</span>
+        <span>Solicitar Dinero</span>
     </a>
     <div id="ProEgre" class="collapse" aria-labelledby="headingUtilities"
         data-parent="#accordionSidebar">
