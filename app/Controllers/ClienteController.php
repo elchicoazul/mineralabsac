@@ -61,6 +61,7 @@ class ClienteController extends BaseController
         $respuesta = $seccion->ObtenerbyId($data);
         $mensaje = session('mensaje');
         $datos=$seccion->Listar();
+        $mensaje = session('mensaje');
         $data = ["rpta" => $respuesta,
         "Tipo" => $tip,
         "mensaje" => $mensaje
