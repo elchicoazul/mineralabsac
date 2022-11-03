@@ -69,6 +69,7 @@
                                    
                                     <th scope="col">Editar</th>
                                     <th scope="col">Eliminar</th>
+                                    <th scope="col">Estado</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -83,6 +84,8 @@
                                 
                                     <td><a href="<?php echo base_url().'/Cliente/'.$key->id_cliente?>" class="btn btn-info btn-sm">editar</a></td>
                                     <td><a href="<?php echo base_url().'/Caja/'.$key->id_cliente?>" class="btn btn-success btn-sm">Detalles</a></td>
+                                    <td ><a href="<?php echo base_url().'/Clientes/estado/'.$key->id_cliente.'/'.$key->estado?>" class="btn btn-danger btn-sm">
+                                    <?php if($key->estado==1){echo "Deshabilitar";}else{echo "habilitar";}?></a></td>
                                     </tr>
                                 <?php endforeach; ?>
                                     

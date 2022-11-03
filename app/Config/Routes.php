@@ -39,12 +39,14 @@ $routes->get('/Categoria', 'CategoriaController::index');
 $routes->get('/Categoria/(:any)', 'CategoriaController::obtener/$1');
 $routes->post('/Categoria/insertar', 'CategoriaController::insertar');
 $routes->post('/Categoria/actualizar', 'CategoriaController::actualizar');
+$routes->get('/Categorias/estado/(:any)/(:any)', 'CategoriaController::estado/$1/$2');
 
 //SubCategoria
 $routes->get('/SubCategoria/(:any)', 'SubCategoriaController::obtener/$1');
 $routes->get('/SubCategoria', 'SubCategoriaController::index');
 $routes->post('/SubCategoria/insertar', 'SubCategoriaController::insertar');
 $routes->post('/SubCategoria/actualizar', 'SubCategoriaController::actualizar');
+$routes->get('/SubCategorias/estado/(:any)/(:any)', 'SubCategoriaController::estado/$1/$2');
 // caja
 $routes->get('/Caja/(:any)', 'CajaController::index/$1');
 $routes->get('/actualizar/(:any)', 'CajaController::obtener/$1');
@@ -61,11 +63,14 @@ $routes->get('/impresion/(:any)', 'CajaController::imp/$1');
 //tipo Cliente
 $routes->get('/Tipocliente', 'TipoclienteController::index');
 $routes->get('/Tipocliente/(:any)', 'TipoclienteController::obtener/$1');
+$routes->get('/Tipoclientes/estado/(:any)/(:any)', 'TipoclienteController::estado/$1/$2');
+
 $routes->post('/Tipocliente/insertar', 'TipoclienteController::insertar');
 $routes->post('/Tipocliente/actualizar', 'TipoclienteController::actualizar');
 // Cliente
 $routes->get('/Cliente', 'ClienteController::index');
 $routes->get('/Cliente/(:any)', 'ClienteController::obtener/$1');
+$routes->get('/Clientes/estado/(:any)/(:any)', 'ClienteController::estado/$1/$2');
 
 $routes->post('/Cliente/insertar', 'ClienteController::insertar');
 $routes->post('/Cliente/actualizar', 'ClienteController::actualizar');

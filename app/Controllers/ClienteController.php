@@ -103,4 +103,28 @@ class ClienteController extends BaseController
             return redirect()->to(base_url() . '/Cliente')->with('mensaje', '5');
         }
     }
+    public function estado($idSeccion, $estado)
+    {   
+        $est = 0;
+        if($estado == 1){
+            $est = 0;
+        } else {
+            $est = 1;
+        }
+        $mensaje = session('mensaje');
+        $datos = [
+            "estado"     => $est,
+            
+        ];
+
+        $seccion = new ClienteModel();
+       // $idSeccion = $_POST['id_categoria'];
+        $respuesta = $seccion->actualizar($datos, $idSeccion);
+
+        if ($respuesta) {
+            return redirect()->to(base_url() . '/Cliente/')->with('mensaje', '2');
+        } else {
+            return redirect()->to(base_url() . '/Cliente/')->with('mensaje', '3');
+        }
+    }
 }
