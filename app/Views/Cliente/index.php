@@ -68,7 +68,7 @@
                                     <th scope="col">Rol</th>
                                    
                                     <th scope="col">Editar</th>
-                                    <th scope="col">Eliminar</th>
+                                    <th scope="col">Detalle</th>
                                     <th scope="col">Estado</th>
                                     </tr>
                                 </thead>
