@@ -63,6 +63,44 @@ class CajaController extends BaseController
 
         return view('Caja/cajas',$data);
     }
+    public function nuevo() {
+
+        $caja = new CajaModel();
+        $valor = $_POST['reporte']-1;
+        echo $valor;
+        $nuevacaja= $caja->NuevoKardex($valor);?>
+        <?php foreach ($nuevacaja as $key) : ?>
+        <?php $soles=$key->Soles?>
+        <?php $dolares=$key->Dolares?>
+        <?php endforeach; ?>
+        <?php
+        
+        $datos =[
+            "id_cliente"     => 1,
+            "id_categoria"     => 1,
+            "id_subcategoria"     => 0,
+            "comprobante"     => "",
+            "numero"     => "",
+            "fecha"     => date('Y/m/d'),
+            "importes"     => $soles,
+            "imported"     => $dolares,
+            "metodo"     => "Saldo",
+            "descripcion"     => "Saldo Anterior",
+            "reporte"     => $_POST['reporte'],
+        ];
+        $caja->insertar($datos);
+        return redirect()->to(base_url().'/kardex/');
+
+    }
+    public function act($id,$valor){
+        $datos =[
+            "reporte"     => $valor,
+        ];
+        $cja = new CajaModel();
+        $cja->actualizar($datos,$id);
+
+        return redirect()->to(base_url().'/kardex/');
+    }
     public function kardex()
     {
         
@@ -75,9 +113,17 @@ class CajaController extends BaseController
         $Cl=$Clie->Listar();
         $Caja = new CajaModel();
         $datos=$Caja->kardex();
+        $maximo = $Caja->maximo();?>
+        <?php foreach ($maximo as $key): ?>
+            <?php //el  nuevo valor  aumenta mucho
+              $amigo =$key->reporte; ?>
+        <?php endforeach; ?><?php
+        $datoscaja=$Caja->kardexCaja($amigo);
+        $datoscajas=$Caja->kardexCajas($amigo);
         $Cat = new CategoriaModel();
         $Consulta=["id_categoria" => $idCategoria];
         $Cate=$Cat->ObtenerbyId($Consulta);
+        $mensaje = session('mensaje');
         $data =[
             "datos" => $Cl,
             "caja" => $datos,
@@ -85,6 +131,10 @@ class CajaController extends BaseController
             "Programas" => $fct,
             "temp_caja" =>$tmp_caja,
             "idcat"=>$idCategoria,
+            "dtcaja"=>$datoscaja,
+            "dtscaja"=>$datoscajas,
+            "maximo"=>$maximo,
+            "mensaje" => $mensaje
         ];
 
         return view('Caja/kardex',$data);
