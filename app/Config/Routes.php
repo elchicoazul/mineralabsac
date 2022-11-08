@@ -79,6 +79,9 @@ $routes->post('/Cliente/actualizar', 'ClienteController::actualizar');
 
 $routes->get('/Programados/(:any)', 'ProgramadosController::index/$1');
 $routes->post('/Programados/insertar', 'ProgramadosController::insertar');
+
+//Historial
+$routes->get('/Historial', 'HistorialController::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
