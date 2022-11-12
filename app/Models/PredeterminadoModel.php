@@ -5,6 +5,10 @@ class PredeterminadoModel extends Model {
         $Categoria = $this->db->query("select * from tb_prederterminado");
          return $Categoria->getResult();
     }
+    public function Listare($id){
+        $Programados = $this->db->query("select * from tb_prederterminado where id_subcategoria=$id");
+         return $Programados->getResult();
+    }
     public function Listarbypre($id_subcat){
         $Categoria = $this->db->query("select * from tb_prederterminado where id_categoria=$id_cat");
          return $Categoria->getResult();

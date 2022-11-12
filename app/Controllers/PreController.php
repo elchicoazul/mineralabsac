@@ -12,7 +12,7 @@ class PreController extends BaseController
         /*$Categoria = new CategoriaModel();
         $datos=$Categoria->Listar();*/
         $SubCategoria = new PredeterminadoModel();
-        $Subdatos=$SubCategoria->Listar();
+        $Subdatos=$SubCategoria->Listare($id_sub);
         $mensaje = session('mensaje');
         $data =[
             //"datos" => $datos,

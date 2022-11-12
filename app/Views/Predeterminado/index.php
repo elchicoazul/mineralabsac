@@ -58,7 +58,21 @@
                 </div>
             </div>
 </div>
-
+<script>
+    $(document).ready(function(){
+                $("#id_categoria").change(function () {
+                    $("#id_categoria option:selected").each(function () {
+                        id_categoria = $('#id_categoria').val();
+                        $.post("<?php echo base_url() ?>/CajaController/subcategoria", {
+                            id_categoria: id_categoria
+                        }, function (data) {
+                            $("#id_subcategoria").html(data);
+                            console.log(data);
+                        });
+                    });
+                });
+            });
+</script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript">
 let mensaje = '<?php echo $mensaje ?>';
