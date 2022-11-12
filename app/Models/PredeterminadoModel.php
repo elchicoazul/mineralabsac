@@ -1,11 +1,11 @@
 <?php namespace App\Models;
 use CodeIgniter\Model;
-class SubCategoriaModel extends Model {
+class PredeterminadoModel extends Model {
     public function Listar(){
         $Categoria = $this->db->query("select * from tb_prederterminado");
          return $Categoria->getResult();
     }
-    public function ListarbyCat($id_subcat){
+    public function Listarbypre($id_subcat){
         $Categoria = $this->db->query("select * from tb_prederterminado where id_categoria=$id_cat");
          return $Categoria->getResult();
     }

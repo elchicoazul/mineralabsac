@@ -76,6 +76,11 @@ $routes->get('/kardex/(:any)/(:any)', 'CajaController::act/$1/$2');
 
 $routes->get('/Programados/(:any)', 'ProgramadosController::index/$1');
 $routes->post('/Programados/insertar', 'ProgramadosController::insertar');
+// predeterminado
+$routes->get('/Pres/(:any)', 'PreController::index/$1');
+$routes->get('/Pre/(:any)', 'PreController::obtener/$1');
+$routes->post('/Pre/insertar', 'PreController::insertar');
+$routes->post('/Pre/actualizar', 'PreController::actualizar');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
