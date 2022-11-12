@@ -48,7 +48,12 @@
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Tipo</th>
                                     <th scope="col">Editar</th>
+
                                     <th scope="col">Estado</th>
+
+                                    
+                                    <th scope="col">Predeterminado</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -59,8 +64,13 @@
                                     <td><?php echo $key->id_categoria?></td>
                                 
                                     <td><a href="<?php echo base_url().'/SubCategoria/'.$key->id_subcategoria?>" class="btn btn-info btn-sm">editar</a></td>
+
                                     <td ><a href="<?php echo base_url().'/SubCategorias/estado/'.$key->id_subcategoria.'/'.$key->estado?>" class="btn btn-danger btn-sm">
                                     <?php if($key->estado==1){echo "Deshabilitar";}else{echo "habilitar";}?></a></td>
+
+                                    <td><a href="#" class="btn btn-danger btn-sm">eliminar</a></td>
+                                    <td><a class="btn btn-success btn-sm actualizar_po" href="<?php echo base_url() ?>/Pres/<?php echo $key->id_subcategoria ?>" data-toggle="modal" data-target="#modal_editar"><i class="material-icons">mode_edit</i></a></td>
+
                                     </tr>
                                 <?php endforeach; ?>
                                     
@@ -75,6 +85,53 @@
             </div>
 </div>
 
+ <!-- modal editar -->
+ <div class="modal fade" id="modal_editar" >
+  <div class="modal-dialog" style="max-width: 60% !important;">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Predeterminado</h4>
+      </div>
+      <div class="modal-body" id="editar">
+                                               
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script >
+     $(document).on("click",".actualizar_po", function(){
+         
+        valor_IDcontrato = $(this).val();
+        valor_IDcontrato = 1;
+        var  esperar = 1;
+        
+        $.ajax({
+            
+            url: $(this).attr('href'),
+            
+            beforeSend: function(){
+                $("#modal_editar .modal-body").text('Cargando');
+            },
+            //type:"POST",
+            //dataType:"html",
+            //data:{id:valor_IDcontrato},
+            success : function(data){
+                setTimeout(function(){
+                    $("#modal_editar .modal-body").html(data);
+                },esperar
+                );
+            
+            
+        }
+        }).success(function(data) {
+            $("#modal_editar .modal-body").html(data);
+            
+        });
+    });
+</script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript">
 let mensaje = '<?php echo $mensaje ?>';
@@ -96,6 +153,22 @@ if (mensaje == '1') {
 
 <!-- Page level plugins -->
 <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->

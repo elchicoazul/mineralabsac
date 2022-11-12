@@ -140,4 +140,4 @@ if (mensaje == '1') {
     swal(':(', 'Fallo al eliminar!', 'error');
 }
 </script>  
-<?= $this->endSection()?>
+

@@ -74,14 +74,27 @@ $routes->get('/Clientes/estado/(:any)/(:any)', 'ClienteController::estado/$1/$2'
 
 $routes->post('/Cliente/insertar', 'ClienteController::insertar');
 $routes->post('/Cliente/actualizar', 'ClienteController::actualizar');
+$routes->post('/kardex/nuevo', 'CajaController::nuevo');
+$routes->get('/kardex/(:any)/(:any)', 'CajaController::act/$1/$2');
 
 //Progrmados
 
 $routes->get('/Programados/(:any)', 'ProgramadosController::index/$1');
 $routes->post('/Programados/insertar', 'ProgramadosController::insertar');
 
+
 //Historial
 $routes->get('/Historial', 'HistorialController::index');
+
+// predeterminado
+$routes->get('/Pres/(:any)', 'PreController::index/$1');
+$routes->get('/Pre/(:any)', 'PreController::obtener/$1');
+$routes->post('/Pre/insertar', 'PreController::insertar');
+$routes->post('/Pre/actualizar', 'PreController::actualizar');
+//
+$routes->post('/Reporte', 'CajaController::reporte');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

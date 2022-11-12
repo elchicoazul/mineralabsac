@@ -63,6 +63,85 @@ class CajaController extends BaseController
 
         return view('Caja/cajas',$data);
     }
+    public function reporte() {
+        $idCategoria=1;
+        $temp =new TempCajaModel();
+        $tmp_caja = $temp->resultado($idCategoria);
+        $programados = new ProgramadosModel();
+        $fct=$programados->resultado($idCategoria);
+        $Clie = new ClienteModel();
+        $Cl=$Clie->Listar();
+        //instancia de caja
+        $Caja = new CajaModel();
+
+        $datos=$Caja->kardexnada($_POST['report']);
+        $maximo = $Caja->maximo();?>
+        <?php foreach ($maximo as $key): ?>
+            <?php //el  nuevo valor  aumenta mucho
+              $amigo =$key->reporte;
+              $maximus =$key->reporte; ?>
+        <?php endforeach; ?><?php
+        $datoscaja=$Caja->kardexCaja($amigo);
+        $datoscajas=$Caja->kardexCajas($amigo);
+        $Cat = new CategoriaModel();
+        $Consulta=["id_categoria" => $idCategoria];
+        $Cate=$Cat->ObtenerbyId($Consulta);
+        $mensaje = session('mensaje');
+        $data =[
+            "datos" => $Cl,
+            "caja" => $datos,
+            "Catego" => $Cate,
+            "Programas" => $fct,
+            "temp_caja" =>$tmp_caja,
+            "idcat"=>$idCategoria,
+            "dtcaja"=>$datoscaja,
+            "dtscaja"=>$datoscajas,
+            "maximo"=>$maximo,
+            "maximus"=>$maximus,
+            "mensaje" => $mensaje
+        ];
+
+        return view('Caja/Reporte',$data);
+    }
+    public function nuevo() {
+
+        $caja = new CajaModel();
+        $valor = $_POST['reporte']-1;
+        echo $valor;
+        $nuevacaja= $caja->NuevoKardex($valor);?>
+        <?php foreach ($nuevacaja as $key) : ?>
+        <?php $soles=$key->Soles?>
+        <?php $dolares=$key->Dolares?>
+        <?php endforeach; ?>
+        <?php
+        
+        $datos =[
+            "id_cliente"     => 1,
+            "id_categoria"     => 1,
+            "id_subcategoria"     => 0,
+            "comprobante"     => "",
+            "numero"     => "",
+            "fecha"     => date('Y/m/d'),
+            "importes"     => $soles,
+            "imported"     => $dolares,
+            "metodo"     => "Saldo",
+            "descripcion"     => "Saldo Anterior",
+            "reporte"     => $_POST['reporte'],
+        ];
+        $caja->insertar($datos);
+        return redirect()->to(base_url().'/kardex/');
+
+    }
+    public function act($id,$valor){
+        $datos =[
+            "reporte"     => $valor,
+        ];
+        $cja = new CajaModel();
+        $cja->actualizar($datos,$id);
+
+        return redirect()->to(base_url().'/kardex/');
+    }
+
     public function kardex()
     {
         
@@ -73,11 +152,21 @@ class CajaController extends BaseController
         $fct=$programados->resultado($idCategoria);
         $Clie = new ClienteModel();
         $Cl=$Clie->Listar();
+        //instancia de caja
         $Caja = new CajaModel();
         $datos=$Caja->kardex();
+        $maximo = $Caja->maximo();?>
+        <?php foreach ($maximo as $key): ?>
+            <?php //el  nuevo valor  aumenta mucho
+              $amigo =$key->reporte;
+              $maximus =$key->reporte; ?>
+        <?php endforeach; ?><?php
+        $datoscaja=$Caja->kardexCaja($amigo);
+        $datoscajas=$Caja->kardexCajas($amigo);
         $Cat = new CategoriaModel();
         $Consulta=["id_categoria" => $idCategoria];
         $Cate=$Cat->ObtenerbyId($Consulta);
+        $mensaje = session('mensaje');
         $data =[
             "datos" => $Cl,
             "caja" => $datos,
@@ -85,6 +174,11 @@ class CajaController extends BaseController
             "Programas" => $fct,
             "temp_caja" =>$tmp_caja,
             "idcat"=>$idCategoria,
+            "dtcaja"=>$datoscaja,
+            "dtscaja"=>$datoscajas,
+            "maximo"=>$maximo,
+            "maximus"=>$maximus,
+            "mensaje" => $mensaje
         ];
 
         return view('Caja/kardex',$data);
@@ -380,10 +474,12 @@ class CajaController extends BaseController
         $mdcliente = new ClienteModel();
         $data = ["id_cliente" => $caja[0]['id_cliente']];
         $cliente = $mdcliente->ObtenerbyId($data);
+        $mensaje = session('mensaje');
 
         $nada = [   "valores" => $caja,
                     "cliente" => $cliente,
-                    "Catego" => $Cate,        
+                    "Catego" => $Cate,
+                    "mensaje"  => $mensaje,       
     ];
         return view('Caja/actualizar',$nada);
 

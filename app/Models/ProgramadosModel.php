@@ -5,6 +5,10 @@ class ProgramadosModel extends Model {
         $Programados = $this->db->query("select * from tb_programados");
          return $Programados->getResult();
     }
+    public function Listare($id){
+        $Programados = $this->db->query("select * from tb_programados where id_subcategoria=$id");
+         return $Programados->getResult();
+    }
     public function resultado($cliente){
         $Programados = $this->db->query("select * from tb_programados inner JOIN tb_categoria on tb_categoria.id_categoria=tb_programados.id_categoria where tb_programados.movimiento<>'Pagado' and id_cliente=$cliente");
          return $Programados->getResult();
