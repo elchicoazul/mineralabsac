@@ -45,18 +45,21 @@
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Tipo</th>
                                     <th scope="col">Editar</th>
-                                    <th hidden scope="col">Eliminar</th>
+                                    <!--<th scope="col">Eliminar</th>-->
+                                    <th scope="col">Estado</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($datos as $key): ?>
                                     <tr>
                                     <th scope="row"><?php echo  $key->id_categoria?></th>
+                                    
                                     <td><?php echo  $key->nombre?></td>
                                     <td><?php echo $key->tipo?></td>
                                 
                                     <td ><a href="<?php echo base_url().'/Categoria/'.$key->id_categoria?>" class="btn btn-info btn-sm">editar</a></td>
-                                    <td hidden><a href="<?php echo base_url().'/eliminar'?>" class="btn btn-danger btn-sm">eliminar</a></td>
+                                    <td ><a href="<?php echo base_url().'/Categorias/estado/'.$key->id_categoria.'/'.$key->estado?>" class="btn btn-danger btn-sm">
+                                    <?php if($key->estado==1){echo "Deshabilitar";}else{echo "habilitar";}?></a></td>
                                     </tr>
                                 <?php endforeach; ?>
                                     

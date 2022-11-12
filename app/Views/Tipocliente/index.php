@@ -46,7 +46,7 @@
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Descripcion</th>
                                     <th scope="col">Editar</th>
-                                    <th scope="col">Eliminar</th>
+                                    <th scope="col">Estado</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -57,7 +57,9 @@
                                     <td><?php echo $key->descripcion?></td>
                                 
                                     <td><a href="<?php echo base_url().'/Tipocliente/'.$key->id_tipocliente?>" class="btn btn-info btn-sm">editar</a></td>
-                                    <td><a href="<?php echo base_url().'/Tipocliente/eliminar'?>" class="btn btn-danger btn-sm">eliminar</a></td>
+                                    <!-- <td><a href="<?php ##echo base_url().'/Tipocliente/eliminar'?>" class="btn btn-danger btn-sm">eliminar</a></td> -->
+                                    <td ><a href="<?php echo base_url().'/Tipoclientes/estado/'.$key->id_tipocliente.'/'.$key->estado?>" class="btn btn-danger btn-sm">
+                                    <?php if($key->estado==1){echo "Deshabilitar";}else{echo "habilitar";}?></a></td> 
                                     </tr>
                                 <?php endforeach; ?>
                                     

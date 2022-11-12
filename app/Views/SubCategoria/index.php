@@ -48,8 +48,12 @@
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Tipo</th>
                                     <th scope="col">Editar</th>
-                                    <th scope="col">Eliminar</th>
+
+                                    <th scope="col">Estado</th>
+
+                                    
                                     <th scope="col">Predeterminado</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -60,8 +64,13 @@
                                     <td><?php echo $key->id_categoria?></td>
                                 
                                     <td><a href="<?php echo base_url().'/SubCategoria/'.$key->id_subcategoria?>" class="btn btn-info btn-sm">editar</a></td>
+
+                                    <td ><a href="<?php echo base_url().'/SubCategorias/estado/'.$key->id_subcategoria.'/'.$key->estado?>" class="btn btn-danger btn-sm">
+                                    <?php if($key->estado==1){echo "Deshabilitar";}else{echo "habilitar";}?></a></td>
+
                                     <td><a href="#" class="btn btn-danger btn-sm">eliminar</a></td>
                                     <td><a class="btn btn-success btn-sm actualizar_po" href="<?php echo base_url() ?>/Pres/<?php echo $key->id_subcategoria ?>" data-toggle="modal" data-target="#modal_editar"><i class="material-icons">mode_edit</i></a></td>
+
                                     </tr>
                                 <?php endforeach; ?>
                                     
@@ -136,7 +145,7 @@ if (mensaje == '1') {
 } else if (mensaje == '3') {
     swal(':(', 'Fallo al Actualizar!', 'error');
 } else if (mensaje == '4') {
-    swal(':D', 'Eliminado con exito!', 'success');
+    swal(':D', 'Actualizado con exito!', 'success');
 } else if (mensaje == '5') {
     swal(':(', 'Fallo al eliminar!', 'error');
 }

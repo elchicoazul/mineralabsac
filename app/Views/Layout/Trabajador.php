@@ -104,10 +104,10 @@
             
 
             <!-- Nav Item - Tables -->
-            <li hidden class="nav-item">
-                <a class="nav-link" href="tables.html">
+            <li  class="nav-item">
+                <a class="nav-link" href="<?php echo base_url()?>/Historial">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
+                    <span>Historial</span></a>
             </li>
 
             <!-- Divider -->
@@ -151,7 +151,7 @@
                         </div>
                     </form>
                     
-                    <a class="btn btn-success btn-sm actualizar_po " href="" data-toggle="modal" data-target="#Calculadora"><i class="material-icons">mode_edit</i></a>
+                    <a class="btn btn-success btn-sm calculadora " href="" data-toggle="modal" data-target="#Calculadora"><i class="material-icons">calculate</i></a>
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
