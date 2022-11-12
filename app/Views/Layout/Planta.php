@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </li>
-            <li hidden class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url()?>/kardex">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Kardex</span></a>
