@@ -13,7 +13,7 @@
                     <div class="col-lg-12">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">kardex</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Reportes</h1>
                             </div>
                             
                             <table class="table table-sm table-striped table-hover">
@@ -30,7 +30,7 @@
                                     <th scope="col">entrada Dolares</th>
                                     <th scope="col">Total Dolares</th>
                                     <th scope="col">Descripcion</th>
-                                    <th scope="col">Detalles</th>
+                                    
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -63,7 +63,7 @@
                                     
                                     <td><?php echo substr($key->descr,0,10)?></td>
                                 
-                                    <td><a href="<?php // echo base_url().'/Cliente/editar/'.$key->id_caja?>" class="btn btn-success btn-sm"><i class="material-icons">library_add</i></a></td>
+                                    
                                     
                                     </tr>
                                 <?php endforeach; ?>

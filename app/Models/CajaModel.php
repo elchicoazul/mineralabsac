@@ -13,6 +13,10 @@ class CajaModel extends Model {
         $Caja = $this->db->query("SELECT *,tb_caja.descripcion as descr, tb_categoria.nombre as Catego, tb_cliente.nombre as nombrecliente FROM tb_caja inner join tb_categoria on tb_categoria.id_categoria=tb_caja.id_categoria inner join tb_cliente on tb_cliente.id_cliente=tb_caja.id_cliente where reporte=0 order by tb_caja.fecha asc");
          return $Caja->getResult();
     }
+    public function kardexnada($reporte){
+        $Caja = $this->db->query("SELECT *,tb_caja.descripcion as descr, tb_categoria.nombre as Catego, tb_cliente.nombre as nombrecliente FROM tb_caja inner join tb_categoria on tb_categoria.id_categoria=tb_caja.id_categoria inner join tb_cliente on tb_cliente.id_cliente=tb_caja.id_cliente where reporte=$reporte order by tb_caja.fecha asc");
+         return $Caja->getResult();
+    }
     //todo registro  sin  saldo  anterior
     public function kardexCaja($id){
         $Caja = $this->db->query("SELECT *,tb_caja.descripcion as descr, tb_categoria.nombre as Catego, tb_cliente.nombre as nombrecliente FROM tb_caja inner join tb_categoria on tb_categoria.id_categoria=tb_caja.id_categoria inner join tb_cliente on tb_cliente.id_cliente=tb_caja.id_cliente where reporte<>0 and reporte=$id and tb_caja.descripcion<>'Saldo Anterior'  order by tb_caja.fecha asc");

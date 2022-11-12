@@ -5,9 +5,10 @@
       $sumasolK=0;
       $sumadolk =0;
       ?>
-<?php foreach ($maximo as $key): ?>
+<?php foreach ($maximo as $keys): ?>
     <?php //el  nuevo valor  aumenta mucho
-      $amigo =$key->reporte; ?>
+      $amigo =$keys->reporte;
+      ?>
 <?php endforeach; ?>
 
 <?php foreach (session('Cliente')as $key): ?>
@@ -21,14 +22,35 @@
                 <div class="row">
                    
                     <div class="col-lg-12">
+                    
                         <div class="p-5">
-                            <form method="Post" action="<?php echo base_url() . '/kardex/nuevo' ?>">
-                            <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">kardex</h1>
-                                <input  type="number" name="reporte" id="reporte" value="<?php echo $amigo+1; ?>">
-                                <button type="submit" class="btn btn-info">Nuevo</button>
+                        <h1 class="h4 text-gray-900 mb-4 text-center">kardex</h1>
+                            <div class="row">
+                                
+                                <div class="col-sm-3">
+                                    <form method="Post" action="<?php echo base_url() . '/Reporte' ?>">
+                                    <select name="report" id="report"  class="form-control">
+                                    <?php for($x=1;$x<=$amigo;$x++){?>
+                                        <option value="<?php echo $x?>"><?php echo $x?></option>
+                                    <?php }?>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <button type="submit" class="btn btn-info">ver Reporte</button>
+                                    </form>
+                                </div>
+                                
+                                
+                                <div class="col-sm-3">
+                                    <form method="Post" action="<?php echo base_url() . '/kardex/nuevo' ?>">
+                                    <input disabled  type="number" name="reporte" id="reporte" value="<?php echo $maximus+1; ?>">
+                                </div>
+                                <div class="col-sm-3">
+                                    <button type="submit" class="btn btn-info">Nuevo</button>
+                                    </form>
+                                </div>
+                                
                             </div>
-                            </form>
                             <table class="table table-sm table-striped table-hover">
                                 <thead class="table-dark">
                                     <tr>
@@ -83,7 +105,9 @@
                                     
                                 </tbody>
                             </table>
-
+                            <hr>
+<h2 class="text-center">Nuevo reporte a generar</h2>
+<hr>
                             <table class="table table-sm table-striped table-hover">
                                 <thead class="table-dark">
                                     <tr>

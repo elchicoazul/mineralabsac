@@ -81,6 +81,9 @@ $routes->get('/Pres/(:any)', 'PreController::index/$1');
 $routes->get('/Pre/(:any)', 'PreController::obtener/$1');
 $routes->post('/Pre/insertar', 'PreController::insertar');
 $routes->post('/Pre/actualizar', 'PreController::actualizar');
+//
+$routes->post('/Reporte', 'CajaController::reporte');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
